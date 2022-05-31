@@ -64,16 +64,20 @@
     .mainDiv {
         display: flex;
         position: absolute;
-        left: 0%;
+        left: 10%;
         top: 25%;
+        transition: all 250ms ease-in-out;
+
       }
   }
 
-  @media (max-width: 844px) {
+  @media (max-width: 925px) {
     .mainDiv {
         display: grid;
         position: absolute;
-        left: 0%;
+        left: 10%;
         top: 25%;
+        transition: all 250ms ease-in-out;
+
       }
   }
