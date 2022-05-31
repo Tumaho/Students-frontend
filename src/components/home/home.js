@@ -1,13 +1,21 @@
 import Header from "../header/header";
 import { Footer } from "../footer/footer";
-import Students from "../students/students"
+import Students from "../students/students";
+import {useHistory, Route} from 'react-router-dom';
 import './home.css'
 function Home() {
+  const history = useHistory();
+
+  const handelUrl = () => {
+    history.push('/students'); 
+  }
+
   return (
     <>
-      <Header></Header>
+      <Header />
+      <Route path="/students" component={Students} />
       <div className="mainDiv">
-        <div className="card">
+        <div onClick={handelUrl} className="card">
           <img src="https://storage.googleapis.com/alghad-media/2021/07/210704_ASAC_ServerBannerDiscord_03a.png" />
           <div className="card-body">
             <h2>Students</h2>
@@ -25,8 +33,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer></Footer>
-      {/* <Students></Students> */}
+      <Footer />
     </>
   );
 }
