@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+    background-image: linear-gradient(to right, #f89820 , #f68423 , #f05537 , #eb443b , #d21e5b , #c61e6b , #832792);
+}
+
+.navbar__title {
+    margin-right: auto;
+    font-size: 150%;
+    padding: 12px 16px;
+}
+
+.navbar__item {
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+}
